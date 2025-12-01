@@ -1,0 +1,33 @@
+.cabeçario{
+  height: 60%;
+}
+.topo{
+    text-align: center;
+     background-color:rgb(6, 101, 157);
+     color: aliceblue;
+ }
+ 
+ .menu{ 
+   display: flex;
+   gap: 10px;
+   justify-content: center;
+   background-color: cornflowerblue;
+   width: 380px;
+   margin: auto;
+ }
+ .sobre{
+   display: flex;
+   gap:100px;
+   background-color: bisque;
+   
+   
+   margin: auto;
+ }
+ .video{
+  margin-left: 500px;
+
+}
+.video2{
+margin-left: 5px;
+}
+    

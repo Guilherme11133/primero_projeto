@@ -1,33 +1,194 @@
-.cabeçario{
-  height: 60%;
+/* A área do cabeçário só precisa garantir que a imagem ocupe o topo corretamente */
+.cabeçario {
+  width: 100%;
+  overflow: hidden; /* impede que algo saia da área */
 }
-.topo{
-    text-align: center;
-     background-color:rgb(6, 101, 157);
-     color: aliceblue;
- }
- 
- .menu{ 
-   display: flex;
-   gap: 10px;
-   justify-content: center;
-   background-color: cornflowerblue;
-   width: 380px;
-   margin: auto;
- }
- .sobre{
-   display: flex;
-   gap:100px;
-   background-color: bisque;
-   
-   
-   margin: auto;
- }
- .video{
-  margin-left: 500px;
 
+/* Sua classe topo não está sendo usada no HTML, mas deixei melhorada para futuro uso */
+.topo {
+  text-align: center;
+  background-color: rgb(6, 101, 157);
+  color: aliceblue;
+  padding: 10px; /* espaço interno deixa mais bonito */
 }
-.video2{
-margin-left: 5px;
+
+/* MELHORIA DO MENU */
+.menu {
+  display: flex;              /* coloca os links lado a lado */
+  gap: 15px;                  /* espaço entre os itens */
+  justify-content: center;    /* centraliza tudo */
+  background-color: cornflowerblue;
+  width: fit-content;         /* faz o menu ficar só do tamanho necessário */
+  margin: 20px auto;          /* centraliza e cria espaço acima e abaixo */
+  padding: 12px 20px;         /* espaço interno → deixa mais bonito */
+  border-radius: 8px;         /* cantos arredondados */
 }
-    
+
+/* estilizando os links dentro do menu */
+.menu a {
+  text-decoration: none;      /* tirar o sublinhado */
+  color: white;               /* texto branco */
+  font-weight: bold;          /* deixa mais elegante */
+  font-family: Arial, sans-serif;
+  padding: 8px 12px;          /* espaço interno do botão */
+  transition: 0.3s;           /* animação suave no hover */
+}
+
+/* quando passar o mouse */
+.menu a:hover {
+  background-color: rgb(5, 72, 129);
+  border-radius: 5px;
+}
+
+/* ÁREA DO VÍDEO */
+.video {
+  display: flex;              /* permite centralizar facilmente */
+  justify-content: center;    /* centraliza horizontalmente */
+  margin-top: 30px;           /* espaço acima */
+}
+
+.video2 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* empurra tudo para a esquerda */
+  gap: 40px;                  /* espaço entre o gif e o vídeo */
+  margin: 20px 0 20px 0;      /* tira o "centralizar" */
+  padding-left: 20px;         /* aproxima da borda esquerda */
+}
+
+.video2 img {
+  width: 450px;  /* 👉 AUMENTA O TAMANHO DO PINGUIM AQUI */
+  height: auto;  /* mantém proporção */
+}
+
+.curiosidades {
+    display: flex;              /* coloca GIF e texto lado a lado */
+    align-items: flex-start;    /* alinha topo do GIF com o texto */
+    gap: 20px;                  /* espaço entre GIF e texto */
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #e0f7fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.curiosidade-gif {
+    width: 200px;               /* tamanho do pinguim */
+    height: auto;
+}
+
+.curiosidade-texto h2 {
+    text-align: center;
+    color: #0277bd;
+    margin-bottom: 15px;
+}
+
+
+
+.abaixo-curiosidades {
+    width: 90%;
+    max-width: 800px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.frase-motivacional {
+    font-size: 20px;
+    font-style: italic;
+    color: #0277bd;
+    margin-bottom: 20px;
+}
+
+.imagem-complementar img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.conteudos {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.conteudo {
+    padding: 20px;
+    background-color: #f0f8ff;
+    border-left: 5px solid #0277bd;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.conteudo h2 {
+    margin-bottom: 10px;
+    color: #01579b;
+}
+
+.conteudo p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+
+.form-contato {
+    width: 90%;
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #e0f7fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
+}
+
+.form-contato h2 {
+    text-align: center;
+    color: #0277bd;
+    margin-bottom: 20px;
+}
+
+.form-contato label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #01579b;
+}
+
+.form-contato input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.form-contato button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0277bd;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-contato button:hover {
+    background-color: #01579b;
+}
+
+
+
+

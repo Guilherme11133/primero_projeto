@@ -1,16 +1,25 @@
-/* A área do cabeçário só precisa garantir que a imagem ocupe o topo corretamente */
-.cabeçario {
-  width: 100%;
-  overflow: hidden; /* impede que algo saia da área */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f8fcff; /* muito suave */
 }
 
-/* Sua classe topo não está sendo usada no HTML, mas deixei melhorada para futuro uso */
+
+
+/* Estilo para o topo */
 .topo {
   text-align: center;
-  background-color: rgb(6, 101, 157);
-  color: aliceblue;
-  padding: 10px; /* espaço interno deixa mais bonito */
+  background-color: rgb(6, 101, 157); /* Cor de fundo do topo */
+  color: aliceblue;  /* Cor do texto no topo */
+  padding: 20px; /* Espaçamento interno para dar respiro */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Sombra para dar destaque */
 }
+
+/* Estilizando o título dentro do topo */
+.topo h1 {
+  font-size: 36px; /* Tamanho grande para o título */
+  font-weight: bold; /* Negrito para dar destaque */
+}
+
 
 /* MELHORIA DO MENU */
 .menu {
@@ -40,26 +49,19 @@
   border-radius: 5px;
 }
 
-/* ÁREA DO VÍDEO */
-.video {
-  display: flex;              /* permite centralizar facilmente */
-  justify-content: center;    /* centraliza horizontalmente */
-  margin-top: 30px;           /* espaço acima */
-}
-
 .video2 {
   display: flex;
-  align-items: center;
-  justify-content: flex-start; /* empurra tudo para a esquerda */
-  gap: 40px;                  /* espaço entre o gif e o vídeo */
-  margin: 20px 0 20px 0;      /* tira o "centralizar" */
-  padding-left: 20px;         /* aproxima da borda esquerda */
+  align-items: center;      /* Alinha verticalmente no centro */
+  justify-content: center;  /* Centraliza o conteúdo horizontalmente */
+  gap: 40px;                /* Espaço entre o gif e o vídeo */
+  margin: 20px 0 20px 0;    /* Espaço superior e inferior */
 }
 
 .video2 img {
-  width: 450px;  /* 👉 AUMENTA O TAMANHO DO PINGUIM AQUI */
-  height: auto;  /* mantém proporção */
+  width: 350px;  /* Tamanho do GIF */
+  height: auto;  /* Mantém a proporção */
 }
+
 
 .curiosidades {
     display: flex;              /* coloca GIF e texto lado a lado */
@@ -110,33 +112,67 @@
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
+/* Ajuste para a área de conteúdo principal */
+
+/* Ajuste para os conteúdos de matemática */
 .conteudos {
     width: 90%;
     max-width: 900px;
     margin: 30px auto;
     display: flex;
-    flex-direction: column;
-    gap: 25px;
+    flex-direction: column; /* Organiza as seções em coluna */
+    gap: 25px;  /* Espaço entre as seções */
 }
 
+/* Estilo de cada bloco de conteúdo */
 .conteudo {
+    display: flex;           /* Usando flexbox para alinhar imagem e texto lado a lado */
+    align-items: flex-start; /* Alinha o conteúdo ao topo */
+    gap: 20px;               /* Espaço entre o GIF e o texto */
     padding: 20px;
-    background-color: #f0f8ff;
-    border-left: 5px solid #0277bd;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    background-color: #ffffff; /* Fundo branco para as caixas de conteúdo */
+    border-left: 5px solid #0277bd; /* Borda esquerda azul */
+    border-radius: 8px;       /* Bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Sombra para dar destaque */
 }
 
+/* Estilo do GIF */
+.conteudo img {
+    height: 400px;  /* Define uma altura maior para o GIF */
+    width: auto;    /* Mantém a proporção da imagem */
+    border-radius: 5px; /* Bordas arredondadas na imagem */
+}
+
+/* Estilizando os títulos dentro do conteúdo */
 .conteudo h2 {
     margin-bottom: 10px;
-    color: #01579b;
+    color: #01579b; /* Cor do título azul escuro */
+    font-size: 22px; /* Tamanho maior para os títulos */
+    font-weight: bold; /* Negrito para maior destaque */
 }
 
+/* Estilizando o texto dentro de cada conteúdo */
 .conteudo p {
     font-size: 16px;
-    line-height: 1.6;
-    color: #333;
+    line-height: 1.6; /* Aumenta o espaçamento entre as linhas */
+    color: #333; /* Cor padrão de texto */
 }
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+    .conteudo {
+        flex-direction: column; /* Torna o layout em coluna para telas menores */
+        align-items: flex-start; /* Alinha o conteúdo à esquerda */
+    }
+
+    .conteudo img {
+        width: 100%;  /* A imagem ocupa toda a largura em telas pequenas */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+}
+
+
+
 
 
 .form-contato {
@@ -189,6 +225,32 @@
     background-color: #01579b;
 }
 
+.sobre {
+  background-color: #e0f7fa;   /* Fundo suave e agradável */
+  padding: 30px;                /* Espaçamento interno para dar respiro */
+  margin: 20px auto;            /* Margem externa para centralizar */
+  width: 80%;                   /* Largura ajustada */
+  border-radius: 10px;          /* Bordas arredondadas */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Sombra suave */
+}
+
+.sobre h2 {
+  color: #01579b;               /* Cor do título mais destacada */
+  font-size: 22px;               /* Tamanho da fonte maior */
+  margin-bottom: 15px;           /* Espaço abaixo do título */
+  line-height: 1.6;              /* Aumenta o espaçamento entre as linhas */
+  font-weight: normal;           /* Remove a negrito */
+}
+
+.sobre h2:nth-child(odd) {
+  font-size: 20px;               /* Tamanho da fonte ligeiramente menor para parágrafos */
+  font-style: italic;            /* Deixa o texto itálico para dar ênfase */
+}
+
+.sobre h2:nth-child(even) {
+  font-size: 20px;               /* Tamanho da fonte semelhante ao anterior */
+  font-weight: normal;           /* Remover o negrito */
+}
 
 
 

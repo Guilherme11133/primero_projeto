@@ -4,7 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conteúdo de Matemática</title>
-    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        /* -------------------- CONFIGURAÇÕES GERAIS -------------------- */
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: linear-gradient(180deg, #000000, #1a1a1a);
+            margin: 0;
+            padding: 0;
+            color: #ffffff;
+        }
+
+        /* -------------------- TOPO -------------------- */
+        .topo {
+            text-align: center;
+            background: linear-gradient(180deg, #0e0e0e, #000000);
+            color: #FFD700;
+            padding: 45px 20px;
+            box-shadow: 0 4px 18px rgba(255, 215, 0, 0.35);
+        }
+
+        .topo h1 {
+            font-size: 46px;
+            margin: 0;
+            font-weight: 700;
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+        }
+
+        /* -------------------- MENU -------------------- */
+        .menu {
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+            background-color: #111;
+            width: fit-content;
+            margin: 25px auto;
+            padding: 15px 35px;
+            border-radius: 15px;
+            border: 2px solid #FFD700;
+            box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #FFD700;
+            font-weight: bold;
+            padding: 12px 20px;
+            transition: 0.3s;
+            border-radius: 10px;
+            font-size: 17px;
+        }
+
+        .menu a:hover {
+            background-color: #FFD700;
+            color: #000;
+            transform: translateY(-2px) scale(1.08);
+        }
+
+        /* -------------------- CONTEÚDOS -------------------- */
+        .conteudos {
+            width: 80%;
+            margin: 40px auto;
+            text-align: center;
+        }
+
+        .card-conteudo {
+            background: #111;
+            border: 3px solid #FFD700;
+            border-radius: 15px;
+            padding: 25px;
+            margin: 25px 0;
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.25);
+            transition: 0.3s;
+        }
+
+        .card-conteudo:hover {
+            transform: scale(1.03);
+            box-shadow: 0 0 30px rgba(255, 215, 0, 0.4);
+        }
+
+        .card-conteudo h2 {
+            color: #FFD700;
+            font-size: 26px;
+            margin-bottom: 12px;
+        }
+
+        .card-conteudo p {
+            color: #ffffff;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        /* -------------------- RODAPÉ -------------------- */
+        .rodape {
+            width: 100%;
+            background: linear-gradient(180deg, #000, #0e0e0e);
+            color: #FFD700;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 17px;
+            margin-top: 50px;
+            border-top: 2px solid #FFD700;
+            box-shadow: 0 -5px 15px rgba(255, 215, 0, 0.25);
+        }
+
+    </style>
+
 </head>
 <body>
 
@@ -25,44 +131,37 @@
     <!-- Conteúdos de Matemática -->
     <div class="conteudos">
 
-    <div class="conteudo">
-        <img src="img/pato.gif" alt="GIF" width="300">
-        <div>
-            <h2> Números Primos</h2>
-            <p>Números primos são aqueles maiores que 1 que só podem ser divididos por 1 e por eles mesmos. Eles são a base da teoria dos números e têm aplicações em criptografia.</p>
+        <div class="card-conteudo">
+            <h2>Números Primos</h2>
+            <p>Números primos são aqueles maiores que 1 que só podem ser divididos por 1 e por eles mesmos. São fundamentais para a teoria dos números e usados em criptografia.</p>
         </div>
+
+        <div class="card-conteudo">
+            <h2>Frações</h2>
+            <p>Frações representam partes de um todo e permitem realizar operações como adição, subtração, multiplicação e divisão entre valores fracionários.</p>
+        </div>
+
+        <div class="card-conteudo">
+            <h2>Geometria</h2>
+            <p>A geometria estuda formas, tamanhos e propriedades do espaço. Engloba figuras planas, sólidos, ângulos, áreas, perímetros e volumes.</p>
+        </div>
+
+        <div class="card-conteudo">
+            <h2>Álgebra</h2>
+            <p>A álgebra usa letras e números para representar e resolver situações e problemas. Trabalha com equações, expressões e funções.</p>
+        </div>
+
+        <div class="card-conteudo">
+            <h2>Estatística</h2>
+            <p>A estatística organiza e interpreta dados, permitindo análises usando médias, medianas, gráficos, tabelas e probabilidades.</p>
+        </div>
+
     </div>
 
-    <div class="conteudo">
-        <img src="img/pato.gif" alt="GIF" width="300">
-        <div>
-            <h2> Frações</h2>
-            <p>Uma fração representa uma parte de um todo. Pode ser simplificada e utilizada para realizar operações como adição, subtração, multiplicação e divisão.</p>
-        </div>
-    </div>
+    <!-- Rodapé -->
+    <footer class="rodape">
+        <p>Desenvolvido por Guilherme Herlander - IW1 - Etec Prof. Milton Gazzetti</p>
+    </footer>
 
-    <div class="conteudo">
-        <img src="img/pato.gif" alt="GIF" width="300">
-        <div>
-            <h2> Geometria</h2>
-            <p>Estudo das formas, tamanhos e propriedades do espaço. Inclui figuras planas, sólidos, ângulos, perímetro, área e volume.</p>
-        </div>
-    </div>
-
-    <div class="conteudo">
-        <img src="img/pato.gif" alt="GIF" width="300">
-        <div>
-            <h2> Álgebra</h2>
-            <p>Parte da matemática que trabalha com letras e números para representar e resolver problemas. Inclui equações, inequações e expressões algébricas.</p>
-        </div>
-    </div>
-
-    <div class="conteudo">
-        <img src="img/pato.gif" alt="GIF" width="300">
-        <div>
-            <h2> Estatística</h2>
-            <p>Ramo da matemática que coleta, organiza e interpreta dados. Utilizada para analisar informações, calcular médias, medianas, modas e criar gráficos.</p>
-        </div>
-    </div>
-
-</div>
+</body>
+</html>

@@ -251,3 +251,48 @@ body {
     color: #fff;
     font-size: 18px;
 }
+/* -------- ESTILO PREMIUM PARA ÁREA DE CONTEÚDOS -------- */
+
+/* Área geral */
+.conteudo {
+    text-align: center;
+    padding: 40px 20px;
+    margin: 40px auto;
+    max-width: 900px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(6px);
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+/* Títulos */
+.conteudo h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #ffd86b;
+    text-shadow: 0 0 12px rgba(255, 215, 120, 0.7);
+    margin-bottom: 10px;
+}
+
+/* Parágrafos */
+.conteudo p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #ffffffd2;
+    max-width: 750px;
+}
+
+/* Hover elegante */
+.conteudo:hover {
+    transform: scale(1.01);
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.45);
+}

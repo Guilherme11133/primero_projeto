@@ -1,53 +1,68 @@
 body {
   font-family: "Segoe UI", Arial, sans-serif;
-  background-color: #f8fcff; /* muito suave */
+  background-color: #f8fcff;
+  margin: 0;
+  padding: 0;
+  color: #033451;
 }
 
-
-
-/* Estilo para o topo */
+/* TOPO */
 .topo {
   text-align: center;
-  background-color: rgb(6, 101, 157); /* Cor de fundo do topo */
-  color: aliceblue;  /* Cor do texto no topo */
-  padding: 20px; /* Espaçamento interno para dar respiro */
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Sombra para dar destaque */
+  background: linear-gradient(180deg, rgb(6, 101, 157), rgb(5, 82, 127));
+  color: aliceblue;
+  padding: 35px 20px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
 }
 
-/* Estilizando o título dentro do topo */
 .topo h1 {
-  font-size: 36px; /* Tamanho grande para o título */
-  font-weight: bold; /* Negrito para dar destaque */
+  font-size: 40px;
+  margin: 0;
 }
 
-
-/* MELHORIA DO MENU */
+/* MENU */
 .menu {
-  display: flex;              /* coloca os links lado a lado */
-  gap: 15px;                  /* espaço entre os itens */
-  justify-content: center;    /* centraliza tudo */
+  display: flex;
+  gap: 20px;
+  justify-content: center;
   background-color: cornflowerblue;
-  width: fit-content;         /* faz o menu ficar só do tamanho necessário */
-  margin: 20px auto;          /* centraliza e cria espaço acima e abaixo */
-  padding: 12px 20px;         /* espaço interno → deixa mais bonito */
-  border-radius: 8px;         /* cantos arredondados */
+  width: fit-content;
+  margin: 25px auto;
+  padding: 15px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
-/* estilizando os links dentro do menu */
 .menu a {
-  text-decoration: none;      /* tirar o sublinhado */
-  color: white;               /* texto branco */
-  font-weight: bold;          /* deixa mais elegante */
-  font-family: Arial, sans-serif;
-  padding: 8px 12px;          /* espaço interno do botão */
-  transition: 0.3s;           /* animação suave no hover */
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: 0.3s;
+  border-radius: 8px;
 }
 
-/* quando passar o mouse */
 .menu a:hover {
   background-color: rgb(5, 72, 129);
-  border-radius: 5px;
+  transform: scale(1.05);
 }
+
+.rodape {
+  width: 100%;
+  background-color: rgb(6, 101, 157);
+  color: white;
+  text-align: center;
+  padding: 18px 0;
+  font-size: 16px;
+  margin-top: 40px;
+  box-shadow: 0 -4px 10px rgba(0,0,0,0.1);
+}
+
+
+/* Mantive todo o restante do seu CSS aqui */
+
 
 .video2 {
   display: flex;
@@ -172,6 +187,45 @@ body {
 }
 
 
+.imagem3-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.imagem3-titulo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #01579b;
+    margin-bottom: 25px;
+}
+
+.imagem3-area {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.imagem3-box {
+    background-color: white;
+    padding: 12px;
+    border: 3px solid #0277bd;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.imagem3-box img {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.imagem3-box:hover {
+    transform: scale(1.03);
+}
 
 
 
